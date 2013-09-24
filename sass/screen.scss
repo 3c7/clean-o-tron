@@ -1,9 +1,16 @@
 @import "compass";
 
-@import "bootstrap"
+@import "bootstrap";
 
 @import "custom/color";
 
 @import "base";
 @import "parts";
 @import "plugins";
+
+#header {
+  height: auto;
+}
+.jumbotron {
+  background: #fff;	
+}
