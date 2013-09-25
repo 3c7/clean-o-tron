@@ -1,1 +1,3 @@
-@import "bootstrap/bootstrap"
+/* Only import jumbotron */
+@import "bootstrap/variables";
+@import "bootstrap/jumbotron";
