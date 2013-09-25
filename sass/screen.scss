@@ -8,9 +8,5 @@
 @import "parts";
 @import "plugins";
 
-#header {
-  height: auto;
-}
-.jumbotron {
-  background: #fff;	
-}
+/* unntz-jumbotron overwrite */
+@import "custom/overwrite";
