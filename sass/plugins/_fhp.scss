@@ -1,0 +1,63 @@
+$fhd-bordercolor: $color-gray02;
+$fhd-fontcolor: $color-gray01;
+$fhd-fontcolor-light: $color-gray02;
+
+.icon-exif {
+	color: $fhd-fontcolor;
+	border-bottom:.1em dotted $fhd-bordercolor;
+	cursor: help;
+	&:before {
+		font: 1.3em $font-icon;
+		line-height: 1.6em;
+		content: "\f030";
+		margin-right: 3px;
+	}
+}
+
+.fhp-wrapper {
+	width: 500px;
+	text-align: center;
+	img {
+		width: 500px;
+		height: auto;
+	}
+}
+
+.fhp-exif-wrapper {
+	color: $fhd-fontcolor-light;
+	border-radius: 0 0 15px 15px;
+	vertical-align: middle;
+	text-align: center;
+	height: 30px;
+	overflow: hidden;
+	transition: all 1s ease;
+	&:hover {
+		color: $fhd-fontcolor;
+		height:68px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.fhp-wrapper {
+		width: 400px;
+		img {
+			width: 400px;
+			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.fhp-wrapper {
+		width: 200px;
+		img {
+			width: 200px;
+			height: auto;
+		}
+	}
+	.fhp-exif-wrapper {
+		&:hover {
+			height: 75px;
+		}
+	}
+}
